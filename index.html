@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, papel e tesoura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="filter"></section>
+    <main>
+        <section id="maoAd">
+            <section class="botoes">
+                <button class="pedra"></button>
+                <button class="papel"></button>
+                <button class="tesoura"></button>
+            </section>
+        </section>
+        <section id="centroMesa">
+            <section id="briga">
+                <button id="ad"></button>
+                <button id="user"></button>
+            </section>
+            <section id="info">
+                <section id="vitorias">
+                    <p>Win</p>
+                    <p></p>
+                </section>
+                <section id="derrotas">
+                    <p>Lose</p>
+                    <p></p>
+                </section>
+                <section id="empates">
+                    <p>Tie</p>
+                    <p></p>
+                </section>
+                <section id="jogadas">
+                    <p>Played</p>
+                    <p></p>
+                </section>
+            </section>
+        </section>
+        <section id="maoUser">
+            <section class="botoes">
+                <button onclick="escolha(0)" class="pedra"></button>
+                <button onclick="escolha(1)" class="papel"></button>
+                <button onclick="escolha(2)" class="tesoura"></button>
+            </section>
+        </section>
+    </main>
+    <script src="code.js"></script>
+</body>
+</html>

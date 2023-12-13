@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #5f2400;
+    border: 15px solid #431a00;
+    height: 100vh;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+}
+
+#maoUser, #maoAd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botoes{
+    width: 90%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+    gap: 15px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #c5c5c5;
+    cursor: pointer;
+}
+
+#maoAd button{
+    cursor: default;
+}
+
+.pedra{
+    background-image: url('img/Pedra.png');
+}
+
+.papel{
+    background-image: url('img/Papel.png');
+}
+
+.tesoura{
+    background-image: url('img/Tesoura.png');
+}
+
+#centroMesa{
+    display: flex;
+    align-items: center;
+}
+
+#info{
+    position: absolute;
+    width: min-content;
+    right: 0px;
+    background-color: #fff9e3;
+    text-align: center;
+    border: 8px solid #431a00;
+    font-size: 1.2em;
+}
+
+#info section{
+    border: 1px solid lightgray;
+    display: grid;
+    margin: 5px;
+    padding: 3px;
+    grid-template-rows: 1fr 1fr;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#info section p:nth-child(1){
+    font-weight: bold;
+    text-shadow: .5px .5px 2px rgba(0, 0, 0, 0.663);
+}
+
+#vitorias :nth-child(1){
+    color: green;
+}
+
+#derrotas :nth-child(1){
+    color: red;
+}
+
+#empates :nth-child(1){
+    color: yellow;
+}
+
+#jogadas :nth-child(1){
+    color: blue;
+}
+
+#briga{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#briga button{
+    display: none;
+}
+
+.noEvents{
+    pointer-events: none;
+}
+
