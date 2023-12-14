@@ -77,10 +77,10 @@ function verificacao(){
         buttonEmbateUser.style.backgroundColor = '#707070'
     }else if(decisao == 'v'){
         buttonEmbateAd.style.backgroundColor = '#707070'
-        buttonEmbateUser.style.backgroundColor = '#ddd'
+        buttonEmbateUser.style.backgroundColor = '#eee'
     }else if(decisao == 'd'){
         buttonEmbateUser.style.backgroundColor = '#707070'
-        buttonEmbateAd.style.backgroundColor = '#ddd'
+        buttonEmbateAd.style.backgroundColor = '#eee'
     }
 
     contJogadas.innerHTML++

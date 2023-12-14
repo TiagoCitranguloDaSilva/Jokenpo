@@ -130,3 +130,27 @@ button{
     pointer-events: none;
 }
 
+@media (height < 670px){
+    #briga{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: min-content;
+        margin: auto;
+    }
+
+    main{
+        grid-template-rows: 1fr 200px 1fr;
+
+    }
+
+}
+
+@media (width > 560px){
+    
+    button{
+        width: 120px;
+        height: 120px;
+    }
+    
+}
